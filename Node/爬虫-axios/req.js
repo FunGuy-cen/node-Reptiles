@@ -4,7 +4,7 @@
  * @Author: lubaicen
  * @Date: 2020-11-10 10:05:47
  * @LastEditors: lubaicen
- * @LastEditTime: 2020-11-10 16:59:34
+ * @LastEditTime: 2020-11-11 09:45:15
  */
 // let axios = require('axios')
 // console.log(axios);
@@ -81,6 +81,6 @@ async function parsePage(url,moviesType){
     }
     let strMovie = JSON.stringify(movie)
     fsWrite('./Node/爬虫-axios/movies/' + moviesType + "/" + res[1] + ".json",strMovie)
-} 
+}
 
 getClassUrl()
